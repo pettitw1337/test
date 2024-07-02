@@ -3,49 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Extensa</title>
+    <title>Viagens de Wagner Pettit</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-        header, footer {
-            background-color: #f4f4f4;
-            padding: 20px;
+        header {
+            background: url('https://via.placeholder.com/1200x300') no-repeat center center/cover;
+            color: #fff;
+            padding: 80px 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
         }
         nav {
-            margin: 10px 0;
+            background: #333;
+            color: #fff;
             text-align: center;
+            padding: 10px 0;
         }
         nav a {
+            color: #fff;
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
             width: 80%;
-            margin: auto;
+            margin: 20px auto;
             overflow: hidden;
         }
-        .content, .aside {
+        .content {
             float: left;
-            width: 48%;
-            margin: 1%;
+            width: 70%;
+            margin-right: 5%;
+            background: #fff;
             padding: 20px;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .aside {
-            width: 23%;
+            float: left;
+            width: 25%;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .footer-links {
             text-align: center;
+            margin: 20px 0;
         }
         .footer-links a {
-            margin: 0 150px;
-            text-decoration: none;
             color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
         }
         .form-section, .gallery, .table-section {
             margin: 20px 0;
@@ -68,46 +101,45 @@
 <body>
 
 <header>
-    <h1>Bem-vindo à Página de viagens</h1>
-    <p>Explorando diversos elementos HTML</p>
+    <h1>Viagens de Wagner Pettit</h1>
+    <p>Explorando o mundo, uma aventura de cada vez</p>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
+    <a href="#home">Início</a>
     <a href="#about">Sobre</a>
-    <a href="#services">Serviços</a>
+    <a href="#destinations">Destinos</a>
     <a href="#contact">Contato</a>
 </nav>
 
 <div class="container">
     <section id="home" class="content">
-        <h2>Home</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet pulvinar purus, eu facilisis ligula vehicula eu. Sed luctus ultricies purus. Suspendisse potenti.</p>
+        <h2>Início</h2>
+        <p>Bem-vindo ao blog de viagens de Wagner Pettit. Aqui você encontrará relatos das minhas aventuras pelo mundo, dicas de viagem, fotos incríveis e muito mais. Junte-se a mim enquanto exploro novas culturas, paisagens deslumbrantes e experiências únicas.</p>
     </section>
     <aside class="aside">
         <h2>Links Úteis</h2>
         <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Blog de Viagem 1</a></li>
+            <li><a href="#">Blog de Viagem 2</a></li>
+            <li><a href="#">Blog de Viagem 3</a></li>
+            <li><a href="#">Blog de Viagem 4</a></li>
         </ul>
     </aside>
     <div class="clear"></div>
     
     <section id="about" class="content">
         <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod magna in vestibulum vehicula. Integer accumsan tincidunt odio, id vulputate quam tristique ut.</p>
-        <p>Praesent at tincidunt ligula. Fusce fermentum tellus eget neque sagittis, ac ullamcorper erat scelerisque. Aliquam erat volutpat. Nunc euismod elit at magna porttitor, non venenatis nisl accumsan.</p>
+        <p>Olá, sou Wagner Pettit, um viajante apaixonado e fotógrafo amador. Minha missão é explorar o mundo e compartilhar minhas experiências com você. Desde as praias ensolaradas do Caribe até as montanhas geladas dos Alpes, cada viagem é uma nova aventura esperando para ser descoberta.</p>
     </section>
 
-    <section id="services" class="content">
-        <h2>Serviços</h2>
+    <section id="destinations" class="content">
+        <h2>Destinos</h2>
         <ul>
-            <li>Serviço 1</li>
-            <li>Serviço 2</li>
-            <li>Serviço 3</li>
-            <li>Serviço 4</li>
+            <li>Paris, França</li>
+            <li>Kyoto, Japão</li>
+            <li>Rio de Janeiro, Brasil</li>
+            <li>Nova York, EUA</li>
         </ul>
     </section>
     
@@ -139,35 +171,35 @@
     </section>
 
     <section class="table-section">
-        <h2>Tabela de Dados</h2>
+        <h2>Minhas Viagens</h2>
         <table border="1">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                    <th>Cidade</th>
+                    <th>Destino</th>
+                    <th>Data</th>
+                    <th>Experiência</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>João</td>
-                    <td>30</td>
-                    <td>São Paulo</td>
+                    <td>Paris, França</td>
+                    <td>Junho 2023</td>
+                    <td>Visitei a Torre Eiffel e o Louvre</td>
                 </tr>
                 <tr>
-                    <td>Maria</td>
-                    <td>25</td>
-                    <td>Rio de Janeiro</td>
+                    <td>Kyoto, Japão</td>
+                    <td>Outubro 2022</td>
+                    <td>Experimentei a cerimônia do chá e visitei templos antigos</td>
                 </tr>
                 <tr>
-                    <td>Pedro</td>
-                    <td>35</td>
-                    <td>Belo Horizonte</td>
+                    <td>Rio de Janeiro, Brasil</td>
+                    <td>Março 2021</td>
+                    <td>Aproveitei o Carnaval e visitei o Cristo Redentor</td>
                 </tr>
                 <tr>
-                    <td>Ana</td>
-                    <td>28</td>
-                    <td>Curitiba</td>
+                    <td>Nova York, EUA</td>
+                    <td>Dezembro 2020</td>
+                    <td>Passei o Natal na Times Square</td>
                 </tr>
             </tbody>
         </table>
@@ -175,11 +207,11 @@
 </div>
 
 <footer>
-    <p>&copy; 2024 Página Extensa. Todos os direitos reservados.</p>
+    <p>&copy; 2024 Viagens de Wagner Pettit. Todos os direitos reservados.</p>
     <div class="footer-links">
-        <a href="#home">Home</a>
+        <a href="#home">Início</a>
         <a href="#about">Sobre</a>
-        <a href="#services">Serviços</a>
+        <a href="#destinations">Destinos</a>
         <a href="#contact">Contato</a>
     </div>
 </footer>
